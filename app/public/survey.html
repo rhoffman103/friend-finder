@@ -1,177 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Friend Finder</title>
-        <!-- Bootsrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-            crossorigin="anonymous">
-        <!--jQuery-->
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-   	
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Friend Finder</title>
+    <!-- Bootsrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <!--jQuery-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
-    <body>
+</head>
 
-        <div class="container">
+<body>
 
-            <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+
+        <div class="jumbotron jumbotron-fluid">
             <div class="container text-center">
                 <h1 class="display-4">Friend Finder</h1>
             </div>
-            </div>
-            
-            <div id="survey">   
-                <form>
-                    <div class="row justify-content-lg-center">
-                        <div class="col-lg-6 col-md-12 bg-light">
-                            <div class="form-group">
+        </div>
+
+        <div id="survey">
+            <form>
+                <div class="row justify-content-lg-center">
+                    <div class="col-lg-6 col-md-12 bg-light">
+                        <div class="form-group">
                             <label for="name">Enter your name</label>
                             <input type="text" class="form-control" id="name" placeholder="Michael Scott">
                             <small id="nameHelp" class="form-text text-muted">We'll only share your first name.</small>
-                            </div>
-                            <div class="form-group">
+                        </div>
+                        <div class="form-group">
                             <label for="profilePicture">Add a link for your profile picture</label>
                             <input type="text" class="form-control" id="profilePicture" placeholder="">
-                            </div>
                         </div>
                     </div>
-                </form>
+                </div>
+            </form>
 
-                <form>
-                    <div class="row mt-4 justify-content-lg-center">
-                        <div class="col-lg-6 col-md-12 bg-light clearfix">
-                            <div class="form-group">
-                                <label for="">I enjoy pizza</label>
-                                <select class="form-control score">
-                                    <option>Select one</option>
-                                    <option>1 (Stongly Disagree)</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5 (Strongly Agree)</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="">I love beer AND pizza</label>
-                                <select class="form-control score">
-                                    <option>Select one</option>
-                                    <option>1 (Stongly Disagree)</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5 (Strongly Agree)</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="">I go to local shows often</label>
-                                <select class="form-control score">
-                                    <option>Select one</option>
-                                    <option>1 (Stongly Disagree)</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5 (Strongly Agree)</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="">I love metal music</label>
-                                <select class="form-control score">
-                                    <option>Select one</option>
-                                    <option>1 (Stongly Disagree)</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5 (Strongly Agree)</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="">I'm a dog person'</label>
-                                <select class="form-control score">
-                                    <option>Select one</option>
-                                    <option>1 (Stongly Disagree)</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5 (Strongly Agree)</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="">I'm a cat person</label>
-                                <select class="form-control score">
-                                    <option>Select one</option>
-                                    <option>1 (Stongly Disagree)</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5 (Strongly Agree)</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                    <label for="">I love coding</label>
-                                    <select class="form-control score">
-                                        <option>Select one</option>
-                                        <option>1 (Stongly Disagree)</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5 (Strongly Agree)</option>
-                                    </select>
-                                </div>
-                            <button type="button" class="btn btn-primary float-left">Submit</button>
+            <form>
+                <div class="row mt-4 justify-content-lg-center">
+                    <div class="col-lg-6 col-md-12 bg-light clearfix">
+                        <div class="form-group">
+                            <label for="">I enjoy pizza</label>
+                            <select class="form-control score">
+                                <option>Select one</option>
+                                <option>1 (Stongly Disagree)</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5 (Strongly Agree)</option>
+                            </select>
                         </div>
+                        <div class="form-group">
+                            <label for="">I love beer AND pizza</label>
+                            <select class="form-control score">
+                                <option>Select one</option>
+                                <option>1 (Stongly Disagree)</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="">I go to local shows often</label>
+                            <select class="form-control score">
+                                <option>Select one</option>
+                                <option>1 (Stongly Disagree)</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="">I love metal music</label>
+                            <select class="form-control score">
+                                <option>Select one</option>
+                                <option>1 (Stongly Disagree)</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="">I'm a dog person'</label>
+                            <select class="form-control score">
+                                <option>Select one</option>
+                                <option>1 (Stongly Disagree)</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="">I'm a cat person</label>
+                            <select class="form-control score">
+                                <option>Select one</option>
+                                <option>1 (Stongly Disagree)</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="">I spend free time practicing code</label>
+                            <select class="form-control score">
+                                <option>Select one</option>
+                                <option>1 (Stongly Disagree)</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="">I love coding</label>
+                            <select class="form-control score">
+                                <option>Select one</option>
+                                <option>1 (Stongly Disagree)</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="">I'm a gamer</label>
+                            <select class="form-control score">
+                                <option>Select one</option>
+                                <option>1 (Stongly Disagree)</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="">I'm a partier</label>
+                            <select class="form-control score">
+                                <option>Select one</option>
+                                <option>1 (Stongly Disagree)</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+                        <button type="button" class="btn btn-primary float-left mb-5 find-friend">Submit</button>
                     </div>
-                </form>
-            </div>
-
-            <div class="result"></div>
-
+                </div>
+            </form>
         </div>
 
-    </body>
+        <div class="result"></div>
 
-    <script>
-        $(document).ready(function() {
-    
-            var newFriend = {};
-            var dataValidated = false;
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+        
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Friend Matched!</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <h4 class="friend-match"></h4>
+                        <img class="img-fluid" alt="profile picture">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
 
-            const checkInputs = function() {
-                $(".form-group").each(function() {
-                    console.log($(this).val());
-                });
-            };
+    </div>
 
-            // Gather survey data
-            const gatherData = function() {
-                newFriend = {
-                    name: $("#name").val().trim(),
-                    photo: $("#profilePicture").val().trim(),
-                    scores: []
-                };
+</body>
 
-                $(".score").each(function() {
-                    newFriend.scores.push(parseInt($(this).val()));
-                });
-            };
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+<script>
+    $(document).ready(function () {
 
-            const postData = function() {
-                console.log(newFriend);
-                $.post("/api/friends", newFriend);
-            }
+        var newFriend = {};
+        var dataValidated = false;
 
-            // Events
-            $(".btn").on("click", function() {
-                gatherData();
-                postData();
-                // checkInputs();
+        const checkInputs = function () {
+            $(".form-group").each(function () {
+                console.log($(this).val());
             });
+        };
+
+        // Gather survey data
+        const gatherData = function () {
+            newFriend = {
+                name: $("#name").val().trim(),
+                photo: $("#profilePicture").val().trim(),
+                scores: []
+            };
+
+            $(".score").each(function () {
+                newFriend.scores.push(parseInt($(this).val()));
+            });
+        };
+
+        const postData = function () {
+            console.log(newFriend);
+            $.post("/api/friends", newFriend, function (data) {
+                console.log(data.name + "\n" + data.photo);
+                $(".friend-match").empty().append(data.name);
+                $(".friend-photo").attr("src", data.photo);
+                $("#myModal").modal();
+            });
+        }
+
+        // Events
+        $(".find-friend").on("click", function () {
+            gatherData();
+            postData();
+            checkInputs();
+        });
 
     });
 
-    </script>
+</script>
 
 </html>
